@@ -1,0 +1,23 @@
+.AMTitle {
+    margin: 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    color: #618ca0;
+    text-align: center;
+    background: #DCF2FD;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.bg {
+    background: url('../img/vue-logo.png'); /* css-loader will recognize and replace this url */
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
