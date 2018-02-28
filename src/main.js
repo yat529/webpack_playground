@@ -4,15 +4,15 @@ import { app } from './js/dom.js';
 
 
 
-let title = document.createElement('h3');
+var title = document.createElement('h3');
 title.innerText = "Hello World!";
 title.classList.add('AMTitle');
 
-let logo = new Image();
+var logo = new Image();
 logo.src = imgUrl;
 logo.classList.add('logo');
 
-let bg = document.createElement('div');
+var bg = document.createElement('div');
 bg.classList.add('bg');
 
 app.appendChild(title);
