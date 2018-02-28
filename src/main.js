@@ -1,21 +1,21 @@
 import './style/style.css';
 import imgUrl from './img/vue-logo.png';
-import { app } from './js/dom.js';
+import im from './js/gridbox.js';
 
+var app = im('#app');
 
-
-var title = document.createElement('h3');
-title.innerText = "Hello World!";
-title.classList.add('AMTitle');
+var title = im(document.createElement('h3'));
+title.text("Hello World!");
+title.addClass('AMTitle');
 
 var logo = new Image();
 logo.src = imgUrl;
-logo.classList.add('logo');
+im(logo).addClass('logo');
 
-var bg = document.createElement('div');
-bg.classList.add('bg');
+var bg = im(document.createElement('div'));
+bg.addClass('bg');
 
-app.appendChild(title);
-app.appendChild(logo);
-app.appendChild(bg);
+app.addChild(title);
+app.addChild(logo);
+app.addChild(bg);
 

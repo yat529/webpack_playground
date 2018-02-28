@@ -162,6 +162,12 @@
             return this;
         },
 
+        // add text
+        text: function(text) {
+            this[0].innerText = text;
+            return this;
+        },
+
         // add Child node
         addChild: function(elem) {
             var elm = elem.length ? elem[0] : elem;
@@ -413,6 +419,7 @@
     // 
 
     // Export to Gloabl
+    var im;
     global.im = im = iAm;
 
 
@@ -1477,6 +1484,8 @@
 
 })(window);
 
+// Export Module
+export default window.im;
 
 
 
